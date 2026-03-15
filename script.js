@@ -1,4 +1,4 @@
-const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQYLIUtVcdWQ3VGWlkIo3FUnrOwk-NQdj4ouP7KHWoiA8wWRiOguPDcZ1nn-gANb-jQyzyWKkjenX8V/pubhtml?gid=0&single=true";
+const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQYLIUtVcdWQ3VGWlkIo3FUnrOwk-NQdj4ouP7KHWoiA8wWRiOguPDcZ1nn-gANb-jQyzyWKkjenX8V/pub?gid=0&single=true&output=csv";
 
 async function loadData(){
 
