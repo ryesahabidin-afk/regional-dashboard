@@ -10,21 +10,23 @@ const rows = data.split("\n").slice(1);
 let labels = [];
 let omset = [];
 
-rows.forEach(row =>{
+rows.forEach(row => {
 
 const cols = row.split(",");
 
 const tanggal = cols[0];
 const outlet = cols[1];
-const fnb = Number(cols[2]);
-const penonton = Number(cols[4]);
-const bill = Number(cols[6]);
-
-const head = fnb / penonton;
-const atv = fnb / bill;
-
-labels.push(tanggal);
-omset.push(fnb);
+const lob = cols[2];
+const kelas = cols[3];
+const area = cols[4];
+const fnb = Number(cols[5]);
+const cinema = Number(cols[6]);
+const penonton = Number(cols[7]);
+const bill = Number(cols[8]);
+const targetHead = Number(cols[9]);
+const head = Number(cols[10]);
+const dayaSerap = Number(cols[11]);
+const at = Number(cols[12]);
 
 const table = document.querySelector("#dataTable tbody");
 
@@ -32,10 +34,17 @@ table.innerHTML += `
 <tr>
 <td>${tanggal}</td>
 <td>${outlet}</td>
+<td>${lob}</td>
+<td>${kelas}</td>
+<td>${area}</td>
 <td>${fnb}</td>
+<td>${cinema}</td>
 <td>${penonton}</td>
-<td>${head.toFixed(2)}</td>
-<td>${atv.toFixed(2)}</td>
+<td>${bill}</td>
+<td>${targetHead}</td>
+<td>${head}</td>
+<td>${dayaSerap}</td>
+<td>${at}</td>
 </tr>
 `;
 
